@@ -49,7 +49,7 @@ const RegisterPage = () => {
 
     try {
       // > Login Process
-      const response = await axios.post('http://localhost:3001/api/v1/register', dataRegister);
+      const response = await axios.post('https://cyan-crazy-mite.cyclic.app/api/v1/register', dataRegister);
       const responseRegister = response.data;
 
       console.info(responseRegister, '=> login data');

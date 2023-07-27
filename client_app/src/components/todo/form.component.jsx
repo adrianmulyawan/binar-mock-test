@@ -30,7 +30,7 @@ const FormComponent = () => {
 
     if (id) {
       try {
-        const todo = await axios.put(`http://localhost:3001/api/v1/todo/edit/${id}`, data, {
+        const todo = await axios.put(`https://cyan-crazy-mite.cyclic.app/api/v1/todo/edit/${id}`, data, {
           headers: {
             "Authorization": `Bearer ${token}`
           }
@@ -45,7 +45,7 @@ const FormComponent = () => {
         alert('Success Edit Todo!');
   
         // > get data lagi
-        const todosAfterInsert = await axios.get('http://localhost:3001/api/v1/todo', {
+        const todosAfterInsert = await axios.get('https://cyan-crazy-mite.cyclic.app/api/v1/todo', {
             headers: {
               "Authorization": `Bearer ${token}`
             }
@@ -67,7 +67,7 @@ const FormComponent = () => {
       }
     } else {
       try {
-        const todo = await axios.post('http://localhost:3001/api/v1/todo', data, {
+        const todo = await axios.post('https://cyan-crazy-mite.cyclic.app/api/v1/todo', data, {
           headers: {
             "Authorization": `Bearer ${token}`
           }
@@ -82,7 +82,7 @@ const FormComponent = () => {
         alert('Success Add Todo!');
   
         // > get data lagi
-        const todosAfterInsert = await axios.get('http://localhost:3001/api/v1/todo', {
+        const todosAfterInsert = await axios.get('https://cyan-crazy-mite.cyclic.app/api/v1/todo', {
             headers: {
               "Authorization": `Bearer ${token}`
             }

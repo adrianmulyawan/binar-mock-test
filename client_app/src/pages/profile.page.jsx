@@ -41,7 +41,7 @@ const ProfilePage = () => {
     if (j === 0) {
       const getProfile = async () => {
         try {
-          const profile = await axios.get('http://localhost:3001/api/v1/userLogin', {
+          const profile = await axios.get('https://cyan-crazy-mite.cyclic.app/api/v1/userLogin', {
             headers: {
               "Authorization": `Bearer ${token}`
             }

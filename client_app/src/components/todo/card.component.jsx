@@ -30,7 +30,7 @@ const CardComponent = () => {
             dispatch(getTodoLoading(true));
           }
 
-          const todos = await axios.get('http://localhost:3001/api/v1/todo', {
+          const todos = await axios.get('https://cyan-crazy-mite.cyclic.app/api/v1/todo', {
             headers: {
               "Authorization": `Bearer ${token}`
             }
@@ -71,7 +71,7 @@ const CardComponent = () => {
 
     if (confirmation === true) {
       try {
-        const todo = await axios.delete(`http://localhost:3001/api/v1/todo/delete/${id}`, {
+        const todo = await axios.delete(`https://cyan-crazy-mite.cyclic.app/api/v1/todo/delete/${id}`, {
           headers: {
             "Authorization": `Bearer ${token}`
           }
@@ -86,7 +86,7 @@ const CardComponent = () => {
         alert('Success Delete Todo!');
 
         // > get todo again
-        const todosAfterDelete = await axios.get('http://localhost:3001/api/v1/todo', {
+        const todosAfterDelete = await axios.get('https://cyan-crazy-mite.cyclic.app/api/v1/todo', {
           headers: {
             "Authorization": `Bearer ${token}`
           }

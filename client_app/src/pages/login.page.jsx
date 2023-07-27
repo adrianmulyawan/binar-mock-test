@@ -48,7 +48,7 @@ const LoginPage = () => {
 
     try {
       // > Login Process
-      const response = await axios.post('http://localhost:3001/api/v1/login', dataLogin);
+      const response = await axios.post('https://cyan-crazy-mite.cyclic.app/api/v1/login', dataLogin);
       const responseLogin = response.data;
 
       // console.info(responseLogin, '=> login data');
