@@ -59,5 +59,5 @@ Gunakan Username "adrianmulyawan" dan Password "12345678" ketika ingin login
 3. GET - USER LOGIN     : https://cyan-crazy-mite.cyclic.app/api/v1/userLogin
 4. GET - GET ALL TODO   : https://cyan-crazy-mite.cyclic.app/api/v1/todo
 5. POST - ADD NEW TODO  : https://cyan-crazy-mite.cyclic.app/api/v1/todo
-6. PUT - EDIT TODO      : https://cyan-crazy-mite.cyclic.app/api/v1/todo/edit/3
-7. DELETE - DELETE TODO : https://cyan-crazy-mite.cyclic.app/api/v1/todo/delete/1
+6. PUT - EDIT TODO      : https://cyan-crazy-mite.cyclic.app/api/v1/todo/edit/{id}
+7. DELETE - DELETE TODO : https://cyan-crazy-mite.cyclic.app/api/v1/todo/delete/{id}
