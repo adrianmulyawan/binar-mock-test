@@ -1,23 +1,41 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "12345678",
+    "username": "default",
+    "password": "MRU2d1sukXAm",
     "database": "binar_mock_test_db",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "ep-shy-pond-77341671.ap-southeast-1.postgres.vercel-storage.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+      }
+   }
   },
   "test": {
-    "username": "postgres",
-    "password": "12345678",
+    "username": "default",
+    "password": "MRU2d1sukXAm",
     "database": "binar_mock_test_db",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "ep-shy-pond-77341671.ap-southeast-1.postgres.vercel-storage.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+      }
+   }
   },
   "production": {
-    "username": "postgres",
-    "password": "12345678",
+    "username": "default",
+    "password": "MRU2d1sukXAm",
     "database": "binar_mock_test_db",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "ep-shy-pond-77341671.ap-southeast-1.postgres.vercel-storage.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+      }
+   }
   }
 }
